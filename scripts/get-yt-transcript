@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Wrapper script to run Python CLI tool with virtual environment
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV_DIR="$SCRIPT_DIR/../py/venv"
+
+if [[ ! -d "$VENV_DIR" ]]; then
+    echo "❌ Virtual environment not found at $VENV_DIR" >&2
+    exit 1
+fi
+
+# Activate venv and run the CLI command
+source "$VENV_DIR/bin/activate"
+exec get-yt-transcript "$@"

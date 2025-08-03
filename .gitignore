@@ -142,3 +142,26 @@ vite.config.ts.timestamp-*
 _tests
 
 .env*
+
+# Python
+py/venv/
+py/__pycache__/
+py/*.pyc
+py/*.pyo
+py/*.pyd
+py/.Python
+py/build/
+py/develop-eggs/
+py/dist/
+py/downloads/
+py/eggs/
+py/.eggs/
+py/lib/
+py/lib64/
+py/parts/
+py/sdist/
+py/var/
+py/wheels/
+py/*.egg-info/
+py/.installed.cfg
+py/*.egg

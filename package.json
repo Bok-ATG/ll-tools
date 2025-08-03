@@ -3,9 +3,18 @@
   "version": "1.0.0",
   "description": "simple tools for the ll",
   "main": "index.js",
+  "bin": {
+    "ll": "./cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mk",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "openai": "^5.11.0",
+    "yargs": "^18.0.0",
+    "youtube-transcript": "^1.2.1"
+  }
 }
